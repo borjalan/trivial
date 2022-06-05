@@ -14,7 +14,7 @@ const GamePage: React.FC = () => {
                     <Grid item xs={2} style={{ height: "70vh" }}>
                         <PlayersDisplay />
                     </Grid>
-                    <Grid container direction="column" justifyContent="space-between" item xs={9} style={{ height: "70vh" }}>
+                    <Grid container direction="column" justifyContent="space-between" item xs={9.8} style={{ height: "70vh" }}>
                         <Grid item xs={1}>
                             <RoomDisplay />
                         </Grid>
