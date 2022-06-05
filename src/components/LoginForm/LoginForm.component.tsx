@@ -5,7 +5,7 @@ import { Formik } from "formik";
 import { Button, Paper, Stack, TextField, Typography } from '@mui/material';
 
 // Helpers
-import { loginFormValidationSchema } from 'helpers/LoginForm.helper';
+import { loginFormValidationSchema } from 'helpers';
 
 // Constants
 import { BUTTONS, TEXTS } from 'constants/Login.constants';
@@ -20,7 +20,7 @@ const LoginForm: React.FC = () => {
         // TODO: Si la sala existe, comprobar si values.name ya existe en la sala
         // TODO: Ver si la partida no ha empezado aún
         // TODO: Si todo está ok, añadimos values.name a la sala con 0 puntos
-        
+
     }
 
     return (
