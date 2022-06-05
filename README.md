@@ -1,1 +1,1 @@
-# Ah yes... The React-Typescript
+# Trivial

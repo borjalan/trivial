@@ -1,6 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from '@emotion/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+// Pages
 import { LoginPage, NotFoundPage } from '../pages';
 
 // Styles

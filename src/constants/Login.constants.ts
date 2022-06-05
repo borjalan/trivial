@@ -27,7 +27,7 @@ export const PARTICLE_CONFIG: any = {
     size: 'cover',
   },
   fullScreen: {
-    zIndex: -1,
+    zIndex: -100,
   },
   interactivity: {
     modes: {
@@ -103,10 +103,7 @@ export const PARTICLE_CONFIG: any = {
       options: {
         polygon: {
           sides: 6,
-        },
-        star: {
-          sides: 5,
-        },
+        }
       },
       type: 'polygon',
     },

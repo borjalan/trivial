@@ -15,12 +15,7 @@ import { PARTICLE_CONFIG } from '../../constants/Login.constants';
 const LoginPage: React.FC = () => {
 
     const particlesInit = async (main: any) => {
-        console.log(main);
         await loadFull(main);
-    };
-
-    const particlesLoaded = async (container: any) => {
-        console.log(container);
     };
 
     return (
@@ -28,7 +23,6 @@ const LoginPage: React.FC = () => {
             <Particles
                 id="tsparticles"
                 init={particlesInit}
-                loaded={particlesLoaded}
                 options={PARTICLE_CONFIG}
             />
             <LoginForm />

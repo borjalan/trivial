@@ -17,9 +17,9 @@ const LoginForm: React.FC = () => {
     const submit = (values: any) => {
 
         // TODO: Buscar en backend si existe sala values.idSala
-        // TODO: Si la sala existe, comprobar si values.name ya existe en la sala existe
+        // TODO: Si la sala existe, comprobar si values.name ya existe en la sala
         // TODO: Ver si la partida no ha empezado aún
-        // TODO: Si todo está ok, añadimos values.name a la sala si la partida no ha empezado con 0 puntos
+        // TODO: Si todo está ok, añadimos values.name a la sala con 0 puntos
         
     }
 
@@ -49,7 +49,7 @@ const LoginForm: React.FC = () => {
                                     error={!!touched.idSala && !!errors.idSala}
                                     helperText={touched.idSala && errors.idSala}
                                 />
-                                <Button type="submit" variant="contained" fullWidth children={values.idSala !== '' ? BUTTONS.UNIRSE : BUTTONS.CREAR} />
+                                <Button type="submit" variant="contained" children={values.idSala !== '' ? BUTTONS.UNIRSE : BUTTONS.CREAR} />
                             </Stack>
                         </form>
                     </Paper>
