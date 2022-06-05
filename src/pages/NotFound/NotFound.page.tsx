@@ -1,10 +1,10 @@
 import React from 'react';
 
 // Styles
-import "../../styles/NotFound.styles.css";
+import "styles/NotFound.styles.css";
 
 // Constants
-import { TEXTS } from '../../constants/NotFound.constants';
+import { TEXTS } from 'constants/NotFound.constants';
 
 const NotFoundPage: React.FC = () => {
     return (

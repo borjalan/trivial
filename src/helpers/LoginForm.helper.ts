@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 
 // Constants
-import { ERRORS } from '../constants/Login.constants';
+import { ERRORS } from 'constants/Login.constants';
 
 export const loginFormValidationSchema = yup.object({
   nombre: yup

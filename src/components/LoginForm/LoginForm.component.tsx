@@ -5,10 +5,10 @@ import { Formik } from "formik";
 import { Button, Paper, Stack, TextField, Typography } from '@mui/material';
 
 // Helpers
-import { loginFormValidationSchema } from '../../helpers/LoginForm.helper';
+import { loginFormValidationSchema } from 'helpers/LoginForm.helper';
 
 // Constants
-import { BUTTONS, TEXTS } from '../../constants/Login.constants';
+import { BUTTONS, TEXTS } from 'constants/Login.constants';
 
 
 const LoginForm: React.FC = () => {

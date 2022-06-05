@@ -3,10 +3,10 @@ import { ThemeProvider } from '@emotion/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Pages
-import { LoginPage, NotFoundPage } from '../pages';
+import { LoginPage, NotFoundPage } from 'pages';
 
 // Styles
-import AppTheme from "../styles/Theme"
+import AppTheme from "styles/Theme"
 
 const AppRouter: React.FC = () => {
   return (
