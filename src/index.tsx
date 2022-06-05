@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Components
-import AppRoutes from './router';
+import App from './App';
 
 // Styles
 import './index.css';
 
 
-ReactDOM.render(<AppRoutes />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
