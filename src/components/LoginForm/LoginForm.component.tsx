@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik } from "formik";
+import { useNavigate } from 'react-router-dom';
 
 // Components
 import { Button, Paper, Stack, TextField, Typography } from '@mui/material';
@@ -12,15 +13,19 @@ import { BUTTONS, TEXTS } from 'constants/Login.constants';
 
 
 const LoginForm: React.FC = () => {
+    const navigate = useNavigate();
     const initialValue = { nombre: '', idSala: '' }
 
     const submit = (values: any) => {
-
+        let idSala = values.idSala;
+        
         // TODO: Buscar en backend si existe sala values.idSala
         // TODO: Si la sala existe, comprobar si values.name ya existe en la sala
         // TODO: Ver si la partida no ha empezado aún
         // TODO: Si todo está ok, añadimos values.name a la sala con 0 puntos
 
+        if (idSala === '') idSala = '0123456789abcdefghijklmn'; // Si no tenemos id de la sala generamos uno nuevo
+        navigate(`/game/${values.idSala}`);
     }
 
     return (
