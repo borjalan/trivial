@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { selectPreguntaActual } from 'redux-reducers/sala.redux';
 
 // Components
@@ -18,6 +18,10 @@ const AnswerPicker: React.FC = () => {
     // En esta variable guardo el valor de la pregunta para mostrar en un estado
     const [preguntaActual, setPreguntaActual] = useState<Pregunta>(preguntas[punteroPregunta]);
     const [peguntaSeleccionada, setPreguntaSeleccionada] = useState<number>(-1);
+
+    useEffect(() => {
+        setPreguntaActual(preguntas[punteroPregunta]);
+    }, []);
 
     const handlePress = (i: number) => setPreguntaSeleccionada(i);
 

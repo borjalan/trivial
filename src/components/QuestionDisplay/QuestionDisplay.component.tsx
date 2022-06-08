@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 // Componentes
@@ -14,6 +14,10 @@ const QuestionDisplay: React.FC = () => {
     const preguntas = useSelector(selectPreguntas); // Aqui guardo el array de preguntas
     // En esta variable guardo el valor de la pregunta para mostrar en un estado
     const [preguntaActual, setPreguntaActual] = useState<Pregunta>(preguntas[punteroPregunta]);
+
+    useEffect(() => {
+        setPreguntaActual(preguntas[punteroPregunta]);
+    }, []);
 
     return (
         <div id="question-display" style={{ height: "100%", width: "100%" }}>
