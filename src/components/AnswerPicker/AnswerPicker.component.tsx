@@ -21,7 +21,7 @@ const AnswerPicker: React.FC = () => {
 
     useEffect(() => {
         setPreguntaActual(preguntas[punteroPregunta]);
-    }, [punteroPregunta]);
+    }, [preguntas, punteroPregunta]);
 
     const handlePress = (i: number) => setPreguntaSeleccionada(i);
 
