@@ -17,7 +17,7 @@ const QuestionDisplay: React.FC = () => {
 
     useEffect(() => {
         setPreguntaActual(preguntas[punteroPregunta]);
-    }, []);
+    }, [punteroPregunta]);
 
     return (
         <div id="question-display" style={{ height: "100%", width: "100%" }}>
