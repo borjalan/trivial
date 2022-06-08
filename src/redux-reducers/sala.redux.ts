@@ -13,7 +13,7 @@ const initialStateSala: Sala = {
   idSala: idSala,
   jugadores: mockJugadores,
   partidaIniciada: false,
-  preguntaActual: 0,
+  preguntaActual: 3,
 };
 
 const salaSlice = createSlice({
