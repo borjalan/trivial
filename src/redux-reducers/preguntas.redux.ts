@@ -17,5 +17,6 @@ const preguntasSlice = createSlice({
 // Selectors
 export const selectPreguntas = (state: RootState) => state.preguntas;
 export const selectStatusPreguntas = (state: RootState) => state.preguntas.map((p: Pregunta) => p.estado);
+export const selectPreguntaActual = (state: RootState) => state.preguntas[state.sala.preguntaActual];
 
 export const preguntasReducer = preguntasSlice.reducer;

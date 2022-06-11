@@ -2,14 +2,14 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 // Components
-import { Badge, Paper, Stack, TextField } from '@mui/material';
+import { Paper, Stack,  } from '@mui/material';
 
 // Selectores
-import { selectPreguntaActual } from 'redux-reducers/sala.redux';
+import { selectPreguntaActualPointer } from 'redux-reducers/sala.redux';
 import { selectStatusPreguntas } from 'redux-reducers/preguntas.redux';
 
 const QuestionsRecord: React.FC = () => {
-  const punteroPregunta = useSelector(selectPreguntaActual);
+  const punteroPregunta = useSelector(selectPreguntaActualPointer);
   const estadoPreguntas = useSelector(selectStatusPreguntas);
 
   const getQuestionColor = (estado: EstadoRespuesta) => {

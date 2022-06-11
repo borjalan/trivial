@@ -14,7 +14,7 @@ import { BUTTONS, TEXTS } from 'constants/Login.constants';
 
 const LoginForm: React.FC = () => {
     const navigate = useNavigate();
-    const initialValue = { nombre: '', idSala: '' }
+    const initialValue = { nombre: '', idSala: '' };
 
     const submit = (values: any) => {
         let idSala = values.idSala;

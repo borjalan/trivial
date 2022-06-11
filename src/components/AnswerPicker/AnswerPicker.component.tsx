@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { selectPreguntaActual } from 'redux-reducers/sala.redux';
+import { selectPreguntaActualPointer } from 'redux-reducers/sala.redux';
 
 // Components
 import { Button, Grid, Paper } from '@mui/material';
@@ -13,7 +13,7 @@ import { map } from 'lodash';
 
 
 const AnswerPicker: React.FC = () => {
-    const punteroPregunta = useSelector(selectPreguntaActual); // Aqui guardo el número de la pregunta
+    const punteroPregunta = useSelector(selectPreguntaActualPointer); // Aqui guardo el número de la pregunta
     const preguntas = useSelector(selectPreguntas); // Aqui guardo el array de preguntas
     // En esta variable guardo el valor de la pregunta para mostrar en un estado
     const [preguntaActual, setPreguntaActual] = useState<Pregunta>(preguntas[punteroPregunta]);
