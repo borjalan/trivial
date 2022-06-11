@@ -25,7 +25,7 @@ const LoginForm: React.FC = () => {
         // TODO: Si todo está ok, añadimos values.name a la sala con 0 puntos
 
         if (idSala === '') idSala = '0123456789abcdefghijklmn'; // Si no tenemos id de la sala generamos uno nuevo
-        navigate(`/game/${values.idSala}`);
+        navigate(`/game/${idSala}`);
     }
 
     return (
