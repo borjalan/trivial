@@ -33,7 +33,7 @@ export const BUTTONS = {
 
 export const mockPreguntas: Array<Pregunta> = [
   {
-    enunciado: 'En qué año fue uno más uno',
+    enunciado: 'En qué año fue uno más uno?',
     respuestas: ['El maravilloso ralf', 'En 2', 'Ioks', 'XD'],
     estado: 'Correcta',
   },
