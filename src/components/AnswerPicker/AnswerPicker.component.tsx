@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { selectPreguntaActualPointer } from 'redux-reducers/sala.redux';
+import { selectPreguntaActual } from 'redux-reducers/sala.redux';
 
 // Components
 import { Button, Grid, Paper } from '@mui/material';
