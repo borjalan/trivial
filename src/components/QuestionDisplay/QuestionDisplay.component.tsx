@@ -56,9 +56,9 @@ const QuestionDisplay: React.FC = () => {
         <div id="question-display" style={{ height: "100%", width: "100%" }}>
             <Paper elevation={12} style={{ backgroundColor: "#dad7cd", height: "100%" }}>
                 <Stack direction="column" justifyContent="space-evenly" alignItems="stretch" spacing={0} style={{ height: "100%" }}>
-                    {estado === 'Iniciando' && <Typography variant='h5' align='center' children={`Esperando a que se inicie la partida`} />}
-                    {estado === 'Jugando' && <Typography variant='h6' align='center' children={`Pregunta ${preguntaCounter + 1}`} />}
-                    {estado === 'Jugando' && <Typography variant='h5' align='center' children={(preguntaActual && preguntaActual.enunciado) || 'Trivial'} />}
+                    {estado === 'Iniciando' && <Typography variant='h3' align='center' children={`Esperando a que se inicie la partida`} />}
+                    {estado === 'Jugando' && <Typography variant='h2' align='center' children={`Pregunta ${preguntaCounter + 1}`} />}
+                    {estado === 'Jugando' && <Typography variant='h4' align='center' children={(preguntaActual && preguntaActual.enunciado) || 'Trivial'} />}
                     {estado === 'Jugando' && <CountDownTimer targetDate={targetDate} />}
                     {estado === 'Puntuaciones' && <DisplayPuntuaciones />}
                 </Stack>
