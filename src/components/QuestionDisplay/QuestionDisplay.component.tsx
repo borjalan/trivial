@@ -54,7 +54,7 @@ const QuestionDisplay: React.FC = () => {
 
     return (
         <div id="question-display" style={{ height: "100%", width: "100%" }}>
-            <Paper elevation={12} style={{ backgroundColor: "#dad7cd", height: "100%" }}>
+            <Paper elevation={12} style={{ backgroundColor: "#A3B18A", height: "100%", border: "solid", borderRadius: "1vw", borderColor: "#000000" }}>
                 <Stack direction="column" justifyContent="space-evenly" alignItems="stretch" spacing={0} style={{ height: "100%" }}>
                     {estado === 'Iniciando' && <Typography variant='h4' align='center' children={`Esperando a que se inicie la partida`} />}
                     {estado === 'Jugando' && <Typography variant='h3' align='center' children={`Pregunta ${preguntaCounter + 1}`} />}

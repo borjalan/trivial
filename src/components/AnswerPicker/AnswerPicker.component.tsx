@@ -44,7 +44,7 @@ const AnswerPicker: React.FC = () => {
 
     return (
         <div id="question-picker">
-            <Paper elevation={12} style={{ backgroundColor: "#dad7cd", height: '20vh' }}>
+            <Paper elevation={12} style={{ backgroundColor: "#A3B18A", height: '20vh', border: "solid", borderRadius: "1vw", borderColor: "#000000" }}>
                 {pregunta && estado === 'Jugando' &&
                     <Grid container direction="row" justifyContent="space-between" alignItems="stretch">
                         {map(pregunta.respuestas, (respuesta: string, index: number) => (

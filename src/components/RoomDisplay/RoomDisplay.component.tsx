@@ -11,7 +11,7 @@ const RoomDisplay: React.FC = () => {
     return (
         <div id="room-display" style={{ height: "100%", width: "100%" }}>
             <Stack direction="row" justifyContent="flex-end" alignItems="center" style={{ height: "100%", width: "100%" }}>
-                <Paper elevation={12} style={{ backgroundColor: "#dad7cd", width: '30vw', height: "100%" }}>
+                <Paper elevation={12} style={{ backgroundColor: "#A3B18A", width: '30vw', height: "100%" }}>
                     <Stack direction="row" justifyContent="center" alignItems="center" style={{ height: "100%", width: "100%" }}>
                         <Typography variant='h6' children={'Id Sala: ' + idSala} />
                     </Stack>

@@ -32,7 +32,7 @@ const QuestionsRecord: React.FC = () => {
         alignItems="center"
         style={{ height: '100%', width: '100%' }}
       >
-        <Paper elevation={12} style={{ backgroundColor: '#DAD7CD', width: '40vw', height: '100%' }}>
+        <Paper elevation={12} style={{ backgroundColor: '#A3B18A', width: '40vw', height: '100%', border: "solid", borderRadius: "1vw", borderColor: "#000000" }}>
           <Stack direction="row" spacing={0} style={{ height: '100%', width: '100%' }}>
             {estado &&
               estado.map((s: EstadoRespuesta, index: number) => (
