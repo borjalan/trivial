@@ -1,15 +1,12 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 
 // Components
 import { Paper, Stack, Typography } from '@mui/material';
 
-// Selectors & Actions
-import { selectIdSala } from 'redux-reducers/sala.redux';
-
 
 const RoomDisplay: React.FC = () => {
-    const idSala = useSelector(selectIdSala);
+    const { idSala } = useParams();
 
     return (
         <div id="room-display" style={{ height: "100%", width: "100%" }}>

@@ -1,72 +1,91 @@
 export const mockPreguntas: Preguntas = [
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    },
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    },
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    },
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    },
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    },
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    },
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    },
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    },
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    },
-    {
-        _id : '0',
-        enunciado: 'Cual es el mejor emoji?',
-        respuestas: ['🤣','😎','🤡','🤠'],
-        estado: 'Sin responder',
-        recomprensa: '100'
-    }
-]
+  {
+    _id: '0',
+    enunciado: '¿Cuál es la montaña más alta del planeta?',
+    respuestas: ['Denali', 'Everest', 'Kilimanjaro', 'Aconcagua'],
+    estado: 'Sin responder',
+    recompensa: 100,
+  },
+  {
+    _id: '1',
+    enunciado: '¿Cuánto es 16 x 14?',
+    respuestas: ['224', '204', '244', '214'],
+    estado: 'Sin responder',
+    recompensa: 100,
+  },
+  {
+    _id: '2',
+    enunciado: '¿Cuántas comunidades autónomas forman la península de España?',
+    respuestas: ['16', '17', '18', '19'],
+    estado: 'Sin responder',
+    recompensa: 100,
+  },
+  {
+    _id: '3',
+    enunciado: '¿Cuántas letras tiene la palabra "esternocleidomastoideo"?',
+    respuestas: ['19', '20', '21', '22'],
+    estado: 'Sin responder',
+    recompensa: 100,
+  },
+  {
+    _id: '4',
+    enunciado: '¿Qué distancia hay, aproximadamente, entre la Tierra y la Luna?',
+    respuestas: ['275.000 km', '325.000 km', '375.000 km', '425.000 km'],
+    estado: 'Sin responder',
+    recompensa: 200,
+  },
+  {
+    _id: '5',
+    enunciado:
+      'Según el Gerontology Research Group, ¿Cuántos años vivió la persona más longeva de la historia?',
+    respuestas: ['119', '120', '121', '122'],
+    estado: 'Sin responder',
+    recompensa: 200,
+  },
+  {
+    _id: '6',
+    enunciado: '¿Cuánto dura la película "Titanic (1997)"?',
+    respuestas: [
+      '2 horas y 50 minutos',
+      '2 horas y 55 minutos',
+      '3 horas y 5 minutos',
+      '3 horas y 15 minutos',
+    ],
+    estado: 'Sin responder',
+    recompensa: 200,
+  },
+  {
+    _id: '7',
+    enunciado: '¿Cuál es la traducción de "blinds" al español?',
+    respuestas: ['Retrovisores', 'Persianas', 'Cortinas', 'Intermitentes'],
+    estado: 'Sin responder',
+    recompensa: 100,
+  },
+  {
+    _id: '8',
+    enunciado: '¿En qué año el hombre pisó la Luna por última vez?',
+    respuestas: ['1972', '1974', '1984', '2020'],
+    estado: 'Sin responder',
+    recompensa: 200,
+  },
+  {
+    _id: '9',
+    enunciado: '¿Cuántas veces se escapó de prisión Joaquín "el Chapo" Guzmán?',
+    respuestas: ['1', '2', '3', '4'],
+    estado: 'Sin responder',
+    recompensa: 300,
+  },
+];
+
+export const mockRespuestas = [
+  'Everest',
+  '224',
+  '17',
+  '22',
+  '375.000 km',
+  '122',
+  '3 horas y 15 minutos',
+  'Persianas',
+  '1972',
+  '2',
+];

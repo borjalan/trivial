@@ -9,6 +9,7 @@ type EstadoSala = 'Iniciando' | 'Jugando' | 'Puntuaciones';
 interface Sala {
   idSala: string;
   jugadores: Array<Judador>;
-  partidaIniciada: EstadoSala;
+  estado: EstadoSala;
   preguntaActual: number;
+  segundosSiguientePregunta: number;
 }

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 // Components
-import { Paper, Stack,  } from '@mui/material';
+import { Paper, Stack, } from '@mui/material';
 
 // Selectores
 import { selectPreguntaActualPointer } from 'redux-reducers/sala.redux';
@@ -11,6 +11,7 @@ import { selectStatusPreguntas } from 'redux-reducers/preguntas.redux';
 const QuestionsRecord: React.FC = () => {
   const punteroPregunta = useSelector(selectPreguntaActualPointer);
   const estadoPreguntas = useSelector(selectStatusPreguntas);
+  const [estado, setEstado] = useState<Array<EstadoRespuesta>>(estadoPreguntas)
 
   const getQuestionColor = (estado: EstadoRespuesta) => {
     let color = '#fdffff';
@@ -18,6 +19,10 @@ const QuestionsRecord: React.FC = () => {
     if (estado === 'Error') color = '#ff0000';
     return color;
   };
+
+  useEffect(() => {
+    setEstado(estadoPreguntas);
+  }, [estadoPreguntas]);
 
   return (
     <div id="questions-record" style={{ height: '100%', width: '100%' }}>
@@ -29,8 +34,8 @@ const QuestionsRecord: React.FC = () => {
       >
         <Paper elevation={12} style={{ backgroundColor: '#DAD7CD', width: '40vw', height: '100%' }}>
           <Stack direction="row" spacing={0} style={{ height: '100%', width: '100%' }}>
-            {estadoPreguntas &&
-              estadoPreguntas.map((s: EstadoRespuesta, index: number) => (
+            {estado &&
+              estado.map((s: EstadoRespuesta, index: number) => (
                 <div key={`record-displayed-${index}`} style={{ height: '100%', width: '100%' }}>
                   <div
                     style={{
