@@ -19,7 +19,7 @@ const QuestionDisplay: React.FC = () => {
     const [preguntaActual, setPreguntaActual] = useState<Pregunta>(pregunta);
     const [timer, setTimer] = useState<NodeJS.Timeout | undefined>(undefined);
     const [targetDate, setTargetDate] = useState(new Date().getTime());
-    const interval = 5000;
+    const interval = 15000;
 
     const setNewCountDown = () => {
         setTargetDate(new Date().getTime() + interval);
