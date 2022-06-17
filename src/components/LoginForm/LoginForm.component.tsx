@@ -26,10 +26,10 @@ const LoginForm: React.FC = () => {
     const submit = (values: any) => {
         let idSala = values.idSala;
 
-        if (idSala === '') idSala = 'salaCon2PlayersDentro123';//uuidv4(); // Si no tenemos id de la sala generamos uno nuevo
+        //if (idSala === '') idSala = 'salaCon2PlayersDentro123';//uuidv4(); // Si no tenemos id de la sala generamos uno nuevo
 
         // TODO: Buscar en backend si existe sala values.idSala
-        if (idSala === 'salaCon2PlayersDentro123') {
+        if (idSala === 'salaPresentacionTFG12345') {
             const { uniqueNamesGenerator, adjectives, animals } = require('unique-names-generator');
             const date = Date.now();
             const randomNumber = date % 8;
@@ -54,6 +54,33 @@ const LoginForm: React.FC = () => {
                 nombre: values.nombre,
                 puntuacion: 0,
                 isLeader: false
+            }]))
+        }
+        if (idSala === '') {
+            idSala = Math.floor(100000000000000000000 + Math.random() * 900000000000000000000);
+            const { uniqueNamesGenerator, adjectives, animals } = require('unique-names-generator');
+            const date = Date.now();
+            const numberPlayers = 0;
+            let players: Array<Jugador> = [];
+            for (let i = 0; i < numberPlayers; i++) {
+                players.push({
+                    nombre: uniqueNamesGenerator({
+                        dictionaries: [adjectives, animals],
+                        length: 2
+                    }),
+                    puntuacion: 0,
+                    isLeader: i === 0
+                });
+            }
+            dispatch(setIdentity({
+                nombre: values.nombre,
+                puntuacion: 0,
+                isLeader: false
+            }));
+            dispatch(addPlayers([...players, {
+                nombre: values.nombre,
+                puntuacion: 0,
+                isLeader: true
             }]))
         }
         // TODO: Si hay la sala ya existe y tiene menos del limite de jugadores te añade con leader a false

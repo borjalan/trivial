@@ -1,5 +1,5 @@
 export const TEXTS = {
-  TITLE: 'Trivial',
+  TITLE: 'Threevial',
 
   // Labels
   LABEL_NOMBRE: 'Nombre',
